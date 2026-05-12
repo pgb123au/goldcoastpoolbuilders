@@ -4,49 +4,52 @@
 
 ## Version 1 — Founder voice, builds authority
 
-A Cockatoo homeowner called me last week.
+A Mermaid Beach homeowner called me last week.
 
-His new $22K composite deck had just been rejected by the building surveyor.
+His new pool builder had just talked him out of resurfacing his 1990s pebble pool and into a full replacement. Quote: $112K.
 
-Reason: BAL-29 property. Composite doesn't pass AS 3959 above BAL-12.5.
+I went and looked at it.
 
-His original carpenter hadn't checked the BAL rating. Just quoted on what looked nice with the house. The owner trusted him, signed, paid.
+Rebar was sound. No structural cracks. Coping was tired but standard. The pebble interior was 28 years old, rough, with surface aggregate plucking — i.e. a textbook resurface candidate.
 
-Now he has a 30m² deck that has to be partially rebuilt — hardwood boards on a non-combustible substructure with ember mesh. Another $15K + occupancy permit blocked.
+We quoted $14K for a Quartzon resurface plus $4K for new travertine coping. He gets a pool that looks better than new for $18K instead of $112K. Same 15-25 year next-life.
 
-Sixteen years after Black Saturday, the AS 3959 bushfire construction rules are not optional. Cockatoo, Emerald, Beaconsfield Upper, Pakenham Upper, Gembrook — every property has a BAL rating (12.5, 19, 29, 40 or FZ) and any new deck must meet it.
+About 5-10% of the pre-quote assessments we run end with us recommending replacement rather than resurface — sometimes the rebar really is going, sometimes the shell really is gone. But the default "looks old = replace" pitch from some Gold Coast builders is robbing homeowners of $80K+ they don't need to spend.
 
-But most general carpenters quote without checking.
+Here's the QBCC reality every Gold Coast pool owner should know:
 
-If you're building a deck in the Cardinia Hills, ask one question first:
+→ 1990s pebble pool now 30 years old, looks tired? Probably resurface, not replace.
+→ Rebar visibly rusting through? Structural assessment, possibly replace.
+→ Hairline surface cracks under 1mm? Cosmetic only, resurface fixes it.
+→ Cracks over 1mm or active leaking? Investigate before quoting anything.
 
-"What's my BAL rating, and will your design pass AS 3959 to it?"
+Demand: what's the QBCC licence number, what's the structural assessment, and what's the warranty on the new surface.
 
-If they answer "let me check" or "we'll figure it out at council" — walk away.
+If they answer "let me check" or "we'll figure it out" — walk away.
 
-goldcoastpoolbuilders.com.au — BAL-rated, surveyor-coordinated, certification-included.
+goldcoastpoolbuilders.com.au — QBCC-licensed, honest structural-vs-cosmetic assessment, 7-year structural warranty.
 
-#CardiniaHills #Cockatoo #Emerald #PropertyDevelopment #Construction #Australia
+#GoldCoast #PropertyInvestment #SwimmingPools #SmallBusiness #Australia
 
 ---
 
 ## Version 2 — Operator voice, technical credibility
 
-Five things every Cardinia Hills decking quote should answer at the design stage:
+Five things every Gold Coast pool resurface quote should answer at the assessment stage:
 
-1️⃣ **BAL rating of the property.** Vic Building Authority bushfire map lookup. Cockatoo / Emerald / Beaconsfield Upper / Pakenham Upper / Gembrook are all BMO zones — every property has a rating. Most carpenters skip this. They shouldn't.
+1️⃣ **Structural assessment of the existing shell.** Before quoting new surface, the builder should look hard at the underlying concrete. Spalling, rebar exposure, crack network — these change the answer from "resurface" to "rebuild." If the builder doesn't lift the coping to look at the shell-bond joint, they're guessing.
 
-2️⃣ **AS 3959 deck material specification.** BAL-12.5 → treated pine OK with Class 1 underdecking. BAL-19 → Class 2 hardwood, no >5mm gaps. BAL-29 → hardwood + non-combustible substructure + ember apron. BAL-40+ → hardwood-only above non-combustible. The carpenter should know this off the top of their head if they work the Hills.
+2️⃣ **Interior finish recommendation with reasoning.** Pebble-on-pebble ($9K-$14K, 12-18yr life), Quartzon Quartz ($12K-$18K, 18-25yr life), or full mosaic tile ($25K-$50K, 30+yr). The 2026 standard upgrade choice is quartz — smoother, more durable, less heel-rough. They should be specific, not "whatever you like."
 
-3️⃣ **Footing depth for reactive clay.** Class M and H Newer Volcanic clay underlies most of the Hills. Standard 600mm concrete pads heave seasonally. Default should be 1.2m concrete pads OR screw piles driven below the active zone. Adds $150–$300 per footing.
+3️⃣ **Equipment audit at the same site visit.** While the pool is drained for the resurface is the cheapest time to swap a tired single-speed pump (saves $400-$800/yr in power) or replace a year-7 chlorinator cell. Bundle saves 15-25% vs doing it separately later.
 
-4️⃣ **Surveyor lined up.** BMO properties need an AS 3959 sign-off from an accredited building surveyor. The carpenter should already have one they work with. If they don't, you're going to chase one mid-project.
+4️⃣ **Form 23 / pool barrier compliance check.** Most pre-2010 fences fail current QDC MP 3.4 compliance — missing 900mm climbable zone, latch height, gate self-close from 0°. If the property's heading for sale, retrofit glass fence at the same time.
 
-5️⃣ **Composite vs hardwood call.** Composite is great for growth-corridor flat blocks. Composite is generally NOT BAL-19+ compliant. If the carpenter is pushing composite for a Cockatoo BAL-29 deck, they don't understand the standard.
+5️⃣ **QBCC licence on the quote.** Not just an ABN. Queensland requires the Class 1 Builder swimming pool contractor endorsement to legally do this work. Plenty of cowboys cut corners on this — the building certifier checks at Form 17 stage.
 
-Without these five, you're buying a deck that looks beautiful until the surveyor inspection. Then you're paying twice.
+Without these five, you're quoting blind and likely overpaying by 30-60%.
 
-goldcoastpoolbuilders.com.au — Cardinia Hills BAL-rated decking specialist.
+goldcoastpoolbuilders.com.au — Gold Coast specialist pool builder and resurfacing contractor.
 
 #Construction #SmallBusiness #Engineering #Tradies #Australia
 
@@ -54,7 +57,7 @@ goldcoastpoolbuilders.com.au — Cardinia Hills BAL-rated decking specialist.
 
 ## Posting tips
 
-- Tuesday/Wednesday morning AEST
+- Tuesday/Wednesday morning AEST (Gold Coast = same time zone, no DST)
 - Reply to first 5 comments within 30 min
 - DON'T edit in first hour
-- Tag building surveyors / arborists / fire-prevention consultants if known
+- Tag building certifiers, pool safety inspectors, real-estate agents handling Gold Coast pool homes if known
