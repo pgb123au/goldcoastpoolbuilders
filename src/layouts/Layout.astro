@@ -1,0 +1,190 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogType?: string;
+}
+
+const SITE = 'https://goldcoastpoolbuilders.com.au';
+const PHONE_DISPLAY = '(03) 9003 0108';
+const PHONE_TEL = '+61390030108';
+const EMAIL = 'quotes@goldcoastpoolbuilders.com.au';
+const BIZ_NAME = 'Gold Coast Pool Builders';
+
+const { title, description, canonical = SITE + '/', ogType = 'website' } = Astro.props;
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "@id": SITE + "/#business",
+  "name": BIZ_NAME,
+  "image": SITE + "/images/og-image.jpg",
+  "url": SITE,
+  "telephone": PHONE_TEL,
+  "priceRange": "$$$",
+  "description": "Specialist swimming pool builders and resurfacing contractors for the City of Gold Coast — new concrete pools, fibreglass pools, pebble & quartz resurfacing, equipment upgrades and pool renovation. QBCC-licensed (Class 1 swimming pool builder), SPASA QLD endorsed. Canal-estate work + ageing 1980s–2000s pool stock our regular weekly work.",
+  "areaServed": [
+    { "@type": "City", "name": "Gold Coast", "containedInPlace": { "@type": "AdministrativeArea", "name": "City of Gold Coast" } },
+    { "@type": "City", "name": "Mermaid Beach" },
+    { "@type": "City", "name": "Burleigh Heads" },
+    { "@type": "City", "name": "Mudgeeraba" },
+    { "@type": "City", "name": "Robina" },
+    { "@type": "City", "name": "Helensvale" },
+    { "@type": "City", "name": "Surfers Paradise" },
+    { "@type": "City", "name": "Broadbeach" },
+    { "@type": "City", "name": "Palm Beach" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Gold Coast",
+    "addressRegion": "QLD",
+    "postalCode": "4217",
+    "addressCountry": "AU"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -28.0023,
+    "longitude": 153.4145
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "07:00",
+    "closes": "17:00"
+  }],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Swimming Pool Construction & Renovation Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "New Concrete Pools" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fibreglass Pools" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pool Resurfacing (Pebble & Quartz)" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Equipment Upgrades (Pumps, Heating, Salt)" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pool Renovation & Repairs" }}
+    ]
+  }
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": SITE + "/#website",
+  "url": SITE + "/",
+  "name": BIZ_NAME,
+  "inLanguage": "en-AU",
+  "publisher": { "@id": SITE + "/#business" }
+};
+---
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={canonical}>
+  <meta name="theme-color" content="#14304a">
+
+  <meta property="og:type" content={ogType}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:url" content={canonical}>
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:site_name" content={BIZ_NAME}>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='5' fill='%2314304a'/><text x='16' y='22' text-anchor='middle' fill='%2306b6d4' font-family='Georgia' font-size='18' font-weight='bold'>P</text></svg>">
+
+  <meta name="google-site-verification" content="Dq3sRDMAktNn0IbXrfk_SUZzMUIcvhGoufuqVRsHWFU">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MNTXLZYFWZ"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MNTXLZYFWZ', {
+      'send_page_view': true,
+      'anonymize_ip': true
+    });
+  </script>
+
+  <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+
+  <slot name="head" />
+</head>
+<body>
+  <div class="top-bar">
+    <span>Free on-site quotes &middot; Mermaid Beach &middot; Burleigh Heads &middot; canal estates &middot; Call <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a></span>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="/" aria-label="Gold Coast Pool Builders home">
+        <small>Mermaid Beach &middot; Burleigh Heads &middot; Mudgeeraba &middot; Helensvale &middot; canal estates</small>
+        Gold Coast Pool Builders
+      </a>
+      <ul class="nav-links">
+        <li><a href="/services/new-concrete-pools/">New Concrete</a></li>
+        <li><a href="/services/fibreglass-pools/">Fibreglass</a></li>
+        <li><a href="/services/pool-resurfacing/">Resurfacing</a></li>
+        <li><a href="/services/equipment-upgrades/">Equipment</a></li>
+        <li><a href="/services/pool-renovation/">Renovation</a></li>
+        <li><a href="/city-of-gold-coast/">Areas</a></li>
+      </ul>
+      <a class="nav-cta" href="/quote/">Free Quote</a>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Gold Coast Pool Builders</h4>
+        <p style="margin-bottom: 0.75rem;">Specialist swimming pool builders and resurfacing contractors for the City of Gold Coast. New concrete and fibreglass pools, pebble and quartz resurfacing of ageing 1980s&ndash;2000s pool stock, equipment upgrades and full pool renovation. QBCC-licensed, SPASA QLD endorsed.</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color:#fff;">Phone:</strong> <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a></p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color:#fff;">Hours:</strong> Mon&ndash;Sat 7am&ndash;5pm AEST</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color:#fff;">Service area:</strong> City of Gold Coast (QLD 4217) &mdash; from Coolangatta to Coomera, canal estates included</p>
+        <p style="margin-bottom: 0;"><strong style="color:#fff;">ABN:</strong> 91 664 546 061</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services/new-concrete-pools/">New concrete pools</a></li>
+          <li><a href="/services/fibreglass-pools/">Fibreglass pools</a></li>
+          <li><a href="/services/pool-resurfacing/">Pool resurfacing</a></li>
+          <li><a href="/services/equipment-upgrades/">Equipment upgrades</a></li>
+          <li><a href="/services/pool-renovation/">Pool renovation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="/mermaid-beach/">Mermaid Beach</a></li>
+          <li><a href="/burleigh-heads/">Burleigh Heads</a></li>
+          <li><a href="/mudgeeraba/">Mudgeeraba</a></li>
+          <li><a href="/robina/">Robina</a></li>
+          <li><a href="/helensvale/">Helensvale</a></li>
+          <li><a href="/city-of-gold-coast/">All City of Gold Coast</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">
+      &copy; {new Date().getFullYear()} {BIZ_NAME} &middot; Yes Right Pty Ltd ABN 91 664 546 061. Free on-site pool quotes across the City of Gold Coast &mdash; new builds, resurfacing, renovation.
+    </p>
+  </footer>
+
+  <a class="mobile-phone" href={`tel:${PHONE_TEL}`} aria-label={`Call ${PHONE_DISPLAY}`}>
+    <span aria-hidden="true">&#9742;</span> Call {PHONE_DISPLAY}
+  </a>
+</body>
+</html>
