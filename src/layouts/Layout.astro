@@ -86,7 +86,7 @@ const websiteSchema = {
   <title>{title}</title>
   <meta name="description" content={description}>
   <link rel="canonical" href={canonical}>
-  <meta name="theme-color" content="#14304a">
+  <meta name="theme-color" content="#0c4a6e">
 
   <meta property="og:type" content={ogType}>
   <meta property="og:title" content={title}>
@@ -99,20 +99,11 @@ const websiteSchema = {
   <meta name="twitter:title" content={title}>
   <meta name="twitter:description" content={description}>
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='5' fill='%2314304a'/><text x='16' y='22' text-anchor='middle' fill='%2306b6d4' font-family='Georgia' font-size='18' font-weight='bold'>P</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='5' fill='%230c4a6e'/><text x='16' y='22' text-anchor='middle' fill='%230891b2' font-family='Georgia' font-size='18' font-weight='bold'>P</text></svg>">
 
   <meta name="google-site-verification" content="Dq3sRDMAktNn0IbXrfk_SUZzMUIcvhGoufuqVRsHWFU">
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MNTXLZYFWZ"></script>
-  <script is:inline>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-MNTXLZYFWZ', {
-      'send_page_view': true,
-      'anonymize_ip': true
-    });
-  </script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "57996e0e719a4a74856930d6717fde37"}'></script>
 
   <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
