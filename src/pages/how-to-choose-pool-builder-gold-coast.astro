@@ -1,0 +1,368 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I verify a pool builder's QBCC licence on the Gold Coast?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to the QBCC online licence register at licence.qbcc.qld.gov.au and search the builder's name or company. Confirm the licence class includes QBCC Pool Construction (or QBCC Class 1 swimming pool builder) and that the licence is current, not suspended. Ask the builder for their licence number before you sign anything — a licensed professional will hand it over without hesitation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Queensland Home Warranty Insurance compulsory for pool builds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Under the Queensland Building and Construction Commission Act, Queensland Home Warranty Insurance is mandatory for any domestic building work over $3,300, which includes new pool construction. The insurance protects you if the builder becomes insolvent, disappears, or fails to complete or fix defective work. Your builder must provide evidence of QBCC insurance before taking a deposit on work above that threshold."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the legal maximum deposit a pool builder can take in Queensland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Under QBCC regulations, for contracts over $20,000 the maximum initial deposit is 10% of the contract price. For contracts between $3,301 and $20,000 the maximum deposit is 20%. Progress payments must be tied to defined construction stages in the written contract. Any builder demanding 30–50% upfront is either uninformed about QBCC rules or operating outside them — both are red flags."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the soil and site report matter so much on the Gold Coast?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Gold Coast has highly variable subtropical soils — from firm Nerang-area clay to loose coastal sand and the reactive clays found in canal-estate backyards. A geotechnical site report (soil test) determines the required footing, steel reinforcement specification, and concrete grade for the pool shell. Skipping this step risks a pool that moves, cracks, or fails within 10 years. Any reputable QBCC-licensed builder will insist on a site report before finalising design."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the biggest red flags when choosing a Gold Coast pool builder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The main red flags are: a builder who cannot produce a current QBCC licence number; demands a deposit above the 10% QBCC cap; offers a cash-only discount (avoids paperwork and QBCC insurance); relies on unlicensed 'supervisors' rather than a licensed builder on site; refuses to provide a fixed-price QBCC-compliant written contract; gives a vague or verbal quote with no stage-payment schedule; and is not willing to show you a completed pool you can inspect in person."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="How to Choose a Pool Builder on the Gold Coast 2026 | QBCC Checks | (03) 9003 0108"
+  description="Vetting a Gold Coast pool builder: how to check the QBCC licence and pool register, Home Warranty Insurance, contract and deposit rules, red flags and 8 questions to ask.">
+  <Fragment slot="head">
+    <link rel="canonical" href="https://goldcoastpoolbuilders.com.au/how-to-choose-pool-builder-gold-coast/">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Buyer&rsquo;s guide &middot; QBCC compliance &middot; 2026</span>
+      <h1>How to choose a <span class="accent">Gold Coast pool builder</span>.</h1>
+      <p class="hero-sub">
+        Check the QBCC licence register before you sign a thing. Understand
+        what Queensland Home Warranty Insurance actually covers, what the legal
+        deposit cap is, and the eight questions that separate serious builders
+        from risky ones. Subtropical Gold Coast soils make the site report
+        non-negotiable.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Step one</span>
+      <h2>Verify the QBCC licence before anything else.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>The QBCC online licence register.</h3>
+        <p>
+          Every licensed pool builder in Queensland must appear on the
+          <strong>QBCC licence register</strong> at licence.qbcc.qld.gov.au.
+          Search the builder&rsquo;s name or company name and confirm:
+        </p>
+        <ul>
+          <li>Licence class includes <strong>QBCC Pool Construction</strong> or <strong>QBCC Class&nbsp;1 swimming pool builder</strong>.</li>
+          <li>Licence status is <strong>Current</strong> &mdash; not Suspended, Cancelled, or Expired.</li>
+          <li>The licensed individual is the person who will actually supervise your build, not a back-office name.</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          Ask for the licence number before you sign a contract. Any professional
+          builder will hand it over in seconds. Hesitation or redirection is
+          itself a red flag.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The QBCC pool register.</h3>
+        <p>
+          Queensland also maintains a pool register. Once your pool is built and
+          a Form&nbsp;23 Pool Safety Certificate is issued, the pool is registered
+          on Queensland&rsquo;s pool safety register. Your builder should be
+          familiar with this registration requirement and factor the Form&nbsp;23
+          inspection into the handover schedule. If they&rsquo;ve never heard of
+          it, walk away. See <a href="/services/new-concrete-pools/">our new
+          concrete pools page</a> and <a href="/services/fibreglass-pools/">our
+          fibreglass pools page</a> for how we manage the full approval cycle.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Consumer protection</span>
+      <h2>Queensland Home Warranty Insurance.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>What it covers.</h3>
+        <p>
+          Under the <em>Queensland Building and Construction Commission Act 1991</em>,
+          <strong>Queensland Home Warranty Insurance is compulsory</strong> for any
+          domestic building work over $3,300 &mdash; and a new pool absolutely
+          qualifies. The insurance protects you against:
+        </p>
+        <ul>
+          <li>Non-completion if the builder becomes insolvent or disappears mid-build.</li>
+          <li>Defective work that the builder refuses to rectify or is no longer able to fix.</li>
+          <li>Subsidence (structural movement) within 6&nbsp;years of completion.</li>
+          <li>Non-structural defects within 6&nbsp;months of completion.</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          Your builder is legally required to provide you with evidence of Home
+          Warranty Insurance before taking a deposit on any contract over $3,300.
+          If they can&rsquo;t or won&rsquo;t, they&rsquo;re operating in breach
+          of the QBCC Act.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The QBCC Level 2 pool contract.</h3>
+        <p>
+          For pool builds over $3,300 a <strong>written QBCC-compliant contract</strong>
+          is mandatory. The contract must specify the full scope of works, a fixed
+          price (or a cost-plus structure with a documented maximum), the stage-payment
+          schedule, the commencement date, and the practical completion date.
+          &ldquo;We&rsquo;ll sort the paperwork later&rdquo; is not acceptable and
+          is not legal. The QBCC provides standard residential-building contract
+          templates. We use a fixed-price written contract on every build.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Your money</span>
+      <h2>Legal deposit caps and progress payments.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>What the QBCC rules actually say.</h3>
+        <p>
+          The QBCC sets <strong>maximum deposit limits</strong> for residential
+          building contracts:
+        </p>
+        <ul>
+          <li>Contract price <strong>over $20,000</strong>: maximum initial deposit is <strong>10%</strong> of the contract price.</li>
+          <li>Contract price <strong>$3,301&ndash;$20,000</strong>: maximum initial deposit is <strong>20%</strong> of the contract price.</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          After the deposit, progress payments must be tied to defined
+          construction stages written into the contract. Typical stages for a
+          Gold Coast concrete pool are: excavation, steel &amp; rough plumbing,
+          shotcrete shell, tiling &amp; coping, equipment commissioning, and
+          final / Form&nbsp;23. Each payment is triggered by you (or your
+          inspector) signing off that stage. You should never be paying for a
+          stage that has not yet been completed. See our detailed
+          <a href="/pool-build-process-timeline-gold-coast/">pool build process
+          and timeline page</a> for what each stage involves.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What &ldquo;above-cap&rdquo; deposits signal.</h3>
+        <p>
+          Any builder asking for 20&ndash;50% upfront on a $60K&ndash;$90K
+          contract is either unaware of QBCC rules (not reassuring in a builder)
+          or aware and hoping you&rsquo;re not. Either way, it&rsquo;s a red
+          flag. A contractor who needs a large deposit to fund your build has
+          a cash-flow problem &mdash; and your money is exposed to that problem.
+        </p>
+        <p>
+          See our honest
+          <a href="/cost/">pool cost guide</a> for what a Gold Coast concrete or
+          fibreglass pool should actually cost &mdash; including the line items
+          that separate a shell quote from a turnkey price.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Gold Coast site conditions</span>
+      <h2>Why subtropical soils and site reports matter here.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Variable Gold Coast ground conditions.</h3>
+        <p>
+          Gold Coast soils range widely. Inland suburbs like
+          <a href="/mudgeeraba/">Mudgeeraba</a> and <a href="/robina/">Robina</a>
+          sit on firm Nerang clay; coastal areas have loose beach-sand profiles;
+          canal estates in Mermaid Waters, Broadbeach Waters, and Sovereign
+          Islands have fill-and-reclamation profiles that can be reactive and
+          have high water tables. Helensvale and the northern growth corridor
+          have areas of soft, compressible subsoil from former wetland.
+        </p>
+        <p style="margin-top: 1rem;">
+          None of this is unusual &mdash; but each soil type demands a different
+          reinforcement specification. A pool designed for Nerang clay and built
+          in Mermaid canal fill without adjustment is a pool that will move and
+          crack within a decade. A <strong>geotechnical site report</strong>
+          (soil test) carried out by a qualified geotechnical engineer is the
+          document that drives the structural design. Any reputable QBCC-licensed
+          builder will require one before finalising the engineering.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Wet-season build scheduling.</h3>
+        <p>
+          The Gold Coast wet season runs roughly November&ndash;April. Shotcrete
+          (the structural concrete phase) cannot be placed in heavy rain &mdash;
+          water dilutes the mix and compromises the shell. Good builders schedule
+          the shotcrete window for dry breaks within the season and carry
+          contingency time. Ask any builder you&rsquo;re considering how they
+          handle wet-season delay. &ldquo;It&rsquo;ll be fine&rdquo; is not a
+          plan.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Due diligence</span>
+      <h2>Red flags and 8 questions to ask.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Red flags &mdash; walk away if you see these.</h3>
+        <ul>
+          <li>Cannot produce a current QBCC licence number on request.</li>
+          <li>Demands a deposit above the QBCC cap (10% for contracts over $20K).</li>
+          <li>Offers a &ldquo;cash discount&rdquo; &mdash; cash jobs avoid QBCC insurance and the QBCC levy, leaving you completely unprotected.</li>
+          <li>Unlicensed &ldquo;supervisors&rdquo; running the site while the licence holder is not present or engaged elsewhere.</li>
+          <li>Refuses to provide a fixed-price written contract before taking money.</li>
+          <li>No completed pools you can visit and inspect in person.</li>
+          <li>Verbal quotes only, no itemised written breakdown.</li>
+          <li>Extremely low quote with no explanation of what&rsquo;s excluded &mdash; a pool that&rsquo;s $20K cheaper on paper may be $30K more expensive by the end.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">8 questions to ask every builder you meet.</h3>
+        <ol>
+          <li><strong>What is your current QBCC licence number, and may I sight it?</strong></li>
+          <li><strong>Will you be the licensed builder on site, or will you be supervising remotely?</strong></li>
+          <li><strong>Does your quote include QBCC Home Warranty Insurance, and can you provide evidence before I pay the deposit?</strong></li>
+          <li><strong>Can you give me a fixed-price QBCC-compliant written contract with stage-payment milestones?</strong></li>
+          <li><strong>Will you commission a geotechnical site report, and will you show me the results before we finalise the engineering?</strong></li>
+          <li><strong>Can I visit a completed pool you built within the last two years, and speak with that owner?</strong></li>
+          <li><strong>How do you handle wet-season delays, and is there a contractual sunset clause on completion?</strong></li>
+          <li><strong>Who is responsible for the Form&nbsp;23 Pool Safety Certificate, and is it included in the contract price?</strong></li>
+        </ol>
+        <p style="margin-top: 1rem;">
+          A builder who answers all eight questions directly and in writing, with
+          documentation where relevant, is worth your time. See our
+          <a href="/concrete-vs-fibreglass/">concrete vs fibreglass guide</a> and
+          <a href="/cost/">pool cost page</a> once you&rsquo;re confident in
+          your builder&rsquo;s credentials.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Frequently asked questions.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>How do I verify a pool builder&rsquo;s QBCC licence on the Gold Coast?</h3>
+        <p>
+          Go to the QBCC online licence register at licence.qbcc.qld.gov.au and
+          search the builder&rsquo;s name or company. Confirm the licence class
+          includes QBCC Pool Construction (or QBCC Class&nbsp;1 swimming pool
+          builder) and that the licence is current, not suspended. Ask the
+          builder for their licence number before you sign anything &mdash; a
+          licensed professional will hand it over without hesitation.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Is Queensland Home Warranty Insurance compulsory for pool builds?</h3>
+        <p>
+          Yes. Under the Queensland Building and Construction Commission Act,
+          Queensland Home Warranty Insurance is mandatory for any domestic
+          building work over $3,300, which includes new pool construction. The
+          insurance protects you if the builder becomes insolvent, disappears,
+          or fails to complete or fix defective work. Your builder must provide
+          evidence of QBCC insurance before taking a deposit on work above that
+          threshold.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">What is the legal maximum deposit a pool builder can take in Queensland?</h3>
+        <p>
+          Under QBCC regulations, for contracts over $20,000 the maximum initial
+          deposit is 10% of the contract price. For contracts between $3,301 and
+          $20,000 the maximum deposit is 20%. Progress payments must be tied to
+          defined construction stages in the written contract. Any builder
+          demanding 30&ndash;50% upfront is either uninformed about QBCC rules
+          or operating outside them &mdash; both are red flags.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Why does the soil and site report matter so much on the Gold Coast?</h3>
+        <p>
+          The Gold Coast has highly variable subtropical soils &mdash; from firm
+          Nerang-area clay to loose coastal sand and the reactive clays found in
+          canal-estate backyards. A geotechnical site report (soil test)
+          determines the required footing, steel reinforcement specification, and
+          concrete grade for the pool shell. Skipping this step risks a pool
+          that moves, cracks, or fails within 10 years. Any reputable
+          QBCC-licensed builder will insist on a site report before finalising
+          design.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">What are the biggest red flags when choosing a Gold Coast pool builder?</h3>
+        <p>
+          The main red flags are: a builder who cannot produce a current QBCC
+          licence number; demands a deposit above the 10% QBCC cap; offers a
+          cash-only discount (avoids paperwork and QBCC insurance); relies on
+          unlicensed &lsquo;supervisors&rsquo; rather than a licensed builder on
+          site; refuses to provide a fixed-price QBCC-compliant written contract;
+          gives a vague or verbal quote with no stage-payment schedule; and is
+          not willing to show you a completed pool you can inspect in person.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we build.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/burleigh-heads/">Burleigh Heads</a>
+        <a class="area-pill" href="/helensvale/">Helensvale</a>
+        <a class="area-pill" href="/mermaid-beach/">Mermaid Beach</a>
+        <a class="area-pill" href="/mudgeeraba/">Mudgeeraba</a>
+        <a class="area-pill" href="/robina/">Robina</a>
+        <a class="area-pill" href="/city-of-gold-coast/">All of the Gold Coast</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>QBCC-licensed pool builders on the Gold Coast.</h2>
+        <p>Full written contract, 10% deposit cap, geotechnical site report, and a completed pool you can visit before you sign.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Free quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
