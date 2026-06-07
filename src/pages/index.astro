@@ -1,0 +1,295 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a swimming pool cost on the Gold Coast in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Typical 2026 Gold Coast price bands: fibreglass shell pools $32,000–$60,000 installed (plunge to mid-size), new concrete pools $55,000–$120,000 (most family rectangular pools 8m × 4m land in the $70–95K range), premium concrete (large free-form, infinity edge, canal-frontage) $130,000–$250,000+. Pool resurfacing: pebble interior $9,000–$16,000, quartz $13,000–$22,000, fully-tiled $25,000–$60,000. Equipment-only upgrade (pump + chlorinator + heating) $4,000–$9,000. Add ~$5,000–$15,000 for landscape integration (paving, surround, glass fencing). Canal-block excavation adds $3,000–$8,000 for shoring." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a building permit or development application for a Gold Coast pool?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most new residential pools on the Gold Coast trigger Self-Assessable Building Work under the Queensland Building Act — your QBCC-licensed pool builder lodges the building approval directly with a private building certifier. City of Gold Coast does NOT require a separate planning DA for a standard pool in a residential zone (RD, R1–R3). Exceptions: canal-frontage pools that encroach the canal-setback line, pools within a Heritage Overlay (parts of Burleigh Heads, Currumbin), or pools >300mm into the side/rear setback may need MCU. Every Gold Coast pool needs a Form 17 compliance certificate (QBCC), Form 23 pool safety final certificate (Pool Safety Council inspector), and barrier compliance to QDC MP 3.4 / AS 1926.1 before final approval." }
+    },
+    {
+      "@type": "Question",
+      "name": "Concrete vs fibreglass on a Gold Coast block — which is right?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Fibreglass wins on cost, install speed (3–5 weeks vs 10–16 weeks) and surface durability — modern Aqua-Tech / Compass / Leisure Pools fibreglass shells hold colour for 25+ years with no resurfacing. Constraints: standard mould sizes (3.5m–12m lengths), can't do irregular shapes or true freeform, and tight Gold Coast canal-estate access (narrow side setbacks, established palms, fences) often blocks crane delivery of larger shells. Concrete wins on freeform/architectural design, infinity edges, dark beach-entry tiles and true freedom of shape — but cost is 40–80% more and the pebble interior resurface comes due every 12–20 years. For most Mermaid Beach / Burleigh Heads narrow blocks under 600m² we recommend fibreglass; for canal estates (Sanctuary Cove, Sovereign Islands) and acreage (Mudgeeraba, Tallai) concrete is usually the right call." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does pool resurfacing last on the Gold Coast? What signs say mine needs it now?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Pebble interior on a Gold Coast pool: 12–20 years (salt chlorinator pools at the lower end due to faster surface attack). Quartz: 15–25 years. Full mosaic tile: 30+ years if grout maintained. Signs it's time: rough, sandpaper-feel surface that scrapes feet; visible aggregate plucking leaving pin-holes; staining and rust streaks that won't acid-wash off; dark grey or beige patches where pH balance has fried the surface; rebar showing through (this means it's URGENT — concrete spalling). On the Gold Coast, ageing 1990s pebble pools in original beachside suburbs (Burleigh, Tugun, Palm Beach, Mermaid) are right in the resurface window now — about 35% of our 2026 work is resurfacing original suburban-pool stock from the 1990s–early-2000s build wave." }
+    }
+  ]
+};
+---
+<Layout
+  title="Gold Coast Pool Builders | New Pools, Resurfacing, Renovation | 0485 939 966"
+  description="Specialist Gold Coast swimming pool builders and resurfacing contractors. New concrete and fibreglass pools, pebble & quartz resurfacing, equipment upgrades, full pool renovation. Mermaid Beach, Burleigh Heads, Mudgeeraba, Robina, Helensvale + canal estates. QBCC-licensed. Free on-site quote.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+<style>
+  /* Image-banner integration (added 2026-06-04) */
+  .hero {
+    position: relative;
+    background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.28)), url('/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+  .hero h1,
+  .hero .hero-sub,
+  .hero .hero-eyebrow,
+  .hero .hero-trust,
+  .hero .accent {
+    color: #fff;
+  }
+  .hero .accent {
+    color: #fcd34d;
+  }
+  .hero .hero-eyebrow {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .hero .hero-trust {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .image-banner {
+    width: 100%;
+    max-height: 460px;
+    overflow: hidden;
+    margin: 0;
+  }
+  .image-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+    display: block;
+  }
+  .image-banner figcaption {
+    background: rgba(15, 23, 42, 0.92);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.85rem 1.25rem;
+    text-align: center;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+</style>
+
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Mermaid Beach &middot; Burleigh Heads &middot; Mudgeeraba &middot; canal estates</span>
+      <h1>Gold Coast&rsquo;s specialist <span class="accent">pool builders &amp; resurfacers</span>.</h1>
+      <p class="hero-sub">
+        New concrete pools, fibreglass shells, pebble &amp; quartz resurfacing of ageing
+        1980s&ndash;2000s pool stock, equipment upgrades, and full pool renovation.
+        Across the City of Gold Coast LGA &mdash; from Coolangatta to Coomera, canal
+        estates included. QBCC-licensed. SPASA QLD endorsed. Free on-site quote.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61485939966">&#9742; Call 0485 939 966</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free on-site quote</a>
+      </div>
+
+      <div class="hero-trust">
+        <div><strong>7 days</strong>From call to fixed quote</div>
+        <div><strong>$30K&ndash;$250K</strong>Typical project range</div>
+        <div><strong>QBCC</strong>Licensed pool builder (Class 1)</div>
+        <div><strong>SPASA QLD</strong>Industry-endorsed members</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we build &amp; renovate</span>
+      <h2>Five swimming pool formats.</h2>
+      <p class="section-lead">
+        From a 3.5m fibreglass plunge in a Mermaid Beach side yard through to a 14m
+        freeform concrete pool with infinity edge over a Sanctuary Cove canal. We do
+        the design, the build, the safety certificate, and the resurfacing work that
+        keeps the older pool stock looking new.
+      </p>
+
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/new-concrete-pools/">
+          <div class="svc-icon" aria-hidden="true">&#9728;</div>
+          <h3>New concrete pools</h3>
+          <p>Sprayed shotcrete or block-and-render construction. Freeform, rectangular, infinity-edge or beach-entry. Pebble, quartz or tiled interiors. Best for irregular shapes, canal blocks and bespoke design. ~$55K&ndash;$250K depending on size and finish.</p>
+          <span class="svc-link">See new concrete pools &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/fibreglass-pools/">
+          <div class="svc-icon" aria-hidden="true">&#9783;</div>
+          <h3>Fibreglass pools</h3>
+          <p>Aqua-Tech, Compass, Leisure Pools, Narellan shells &mdash; pre-formed, craned in, 3&ndash;5 week install. Colour-stable for 25+ years, no resurface needed. Standard sizes 3.5m&ndash;12m. ~$32K&ndash;$60K installed including excavation.</p>
+          <span class="svc-link">See fibreglass pools &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/pool-resurfacing/">
+          <div class="svc-icon" aria-hidden="true">&#9783;</div>
+          <h3>Pool resurfacing</h3>
+          <p>Pebble (Pebblecrete, Quartzon, Diamond Brite), quartz or full mosaic-tile re-interior on aged 12&ndash;25 year old concrete pools. Old surface chipped off, new shell bonded. 7&ndash;14 day project. $9K&ndash;$22K (pebble/quartz), $25K+ tiled.</p>
+          <span class="svc-link">See pool resurfacing &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/equipment-upgrades/">
+          <div class="svc-icon" aria-hidden="true">&#9618;</div>
+          <h3>Equipment upgrades</h3>
+          <p>Variable-speed pump retrofits (40&ndash;60% energy saving), salt chlorinator replacement, gas/electric/heat-pump heating, LED lighting, smart automation (Astralpool, Hayward, Zodiac). Pool runs quieter, cleaner, half the power bill. $1.5K&ndash;$9K typical.</p>
+          <span class="svc-link">See equipment upgrades &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/pool-renovation/">
+          <div class="svc-icon" aria-hidden="true">&#9608;</div>
+          <h3>Pool renovation</h3>
+          <p>Coping replacement, paving replacement, surround upgrade, new glass fencing integration, structural crack repair, leak detection &amp; repair. The full make-it-look-new package short of a complete resurface. ~$8K&ndash;$80K depending on scope.</p>
+          <span class="svc-link">See pool renovation &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/result.jpg" alt="Luxury backyard pool with deep blue water and entertaining area" loading="lazy" decoding="async" />
+    <figcaption>Concrete or fibreglass — fixed-price under DBI.</figcaption>
+  </figure>
+
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why a Gold Coast specialist</span>
+      <h2>Three things every Gold Coast pool project needs to get right.</h2>
+      <div class="divider"></div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 60rem;">
+        <div>
+          <h3>QBCC Class 1 pool builder &mdash; not a general builder dabbling.</h3>
+          <p>
+            Queensland licenses swimming pool construction under a specific QBCC class
+            (Class 1 Builder &mdash; Open or Medium Rise, with the swimming pool
+            contractor endorsement). A general builder without that endorsement
+            <strong>cannot</strong> lawfully build, resurface or substantially renovate
+            a pool. Plenty of cowboys cut corners on this &mdash; the building
+            certifier checks the licence number on the Form 17 compliance certificate
+            and the unsuspecting owner discovers it after settlement when the building
+            insurance won&rsquo;t certify. Confirm any quoted Gold Coast pool builder
+            has their QBCC number on the quote, not just an ABN.
+          </p>
+        </div>
+        <div>
+          <h3>QDC MP 3.4 / AS 1926.1 pool barrier compliance.</h3>
+          <p>
+            Queensland has the strictest residential pool barrier standard in
+            Australia. Every Gold Coast pool needs a barrier (fence + self-closing,
+            self-latching gates) compliant with the Queensland Development Code
+            MP 3.4 and AS 1926.1 &mdash; including the 5-year mandatory Pool Safety
+            Certificate (Form 23) issued by a registered Pool Safety Inspector
+            <strong>before sale or lease</strong>. A non-compliant fence is the
+            #1 reason a settlement gets delayed on a Burleigh / Mermaid / Robina
+            home with a pool. We design the fence and the surrounding paving to
+            comply on day one &mdash; rather than tearing back a paver row later
+            because the climbable zone (900mm rule) was missed.
+          </p>
+        </div>
+        <div>
+          <h3>Salt + UV + coastal humidity = equipment lifecycle.</h3>
+          <p>
+            A Gold Coast pool runs in a far harsher environment than a Brisbane or
+            Sydney pool. Salt-chlorinator pools are nearly universal in coastal
+            QLD (chlorine handling in 35&deg;C / 80% humidity is unpleasant). Salt
+            + UV attacks every metal fitting, every pump-motor seal, and the
+            pebble interior. Expect to replace: pump motor every 7&ndash;10 years
+            (vs 12&ndash;15 inland), chlorinator cell every 4&ndash;7 years
+            (vs 8&ndash;10), pebble interior every 12&ndash;20 years (vs 18&ndash;25).
+            We size and spec equipment for the salt environment from day one
+            (316-grade stainless fittings, salt-rated motors) &mdash; saves an
+            equipment-replacement cycle inside 10 years.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Service areas</span>
+      <h2>Where we build &amp; resurface.</h2>
+      <p class="lead" style="max-width: 42rem; margin-bottom: 1rem;">
+        Whole City of Gold Coast LGA &mdash; beachside, canal-estate, hinterland and
+        northern Gold Coast. Coolangatta to Coomera. Canal-estate pool work (Sanctuary
+        Cove, Sovereign Islands, Paradise Point) is our weekly bread-and-butter.
+      </p>
+      <div class="areas-grid">
+        <a class="area-pill" href="/mermaid-beach/">Mermaid Beach</a>
+        <a class="area-pill" href="/burleigh-heads/">Burleigh Heads</a>
+        <a class="area-pill" href="/mudgeeraba/">Mudgeeraba</a>
+        <a class="area-pill" href="/robina/">Robina</a>
+        <a class="area-pill" href="/helensvale/">Helensvale</a>
+        <a class="area-pill" href="/city-of-gold-coast/">City of Gold Coast</a>
+        <a class="area-pill" href="/quote/">Surfers Paradise</a>
+        <a class="area-pill" href="/quote/">Broadbeach</a>
+        <a class="area-pill" href="/quote/">Palm Beach</a>
+        <a class="area-pill" href="/quote/">Currumbin</a>
+        <a class="area-pill" href="/quote/">Coolangatta</a>
+        <a class="area-pill" href="/quote/">Sanctuary Cove</a>
+        <a class="area-pill" href="/quote/">Sovereign Islands</a>
+        <a class="area-pill" href="/quote/">Hope Island</a>
+        <a class="area-pill" href="/quote/">Paradise Point</a>
+        <a class="area-pill" href="/quote/">Tallai</a>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/detail.jpg" alt="Pool waterline mosaic tile close-up" loading="lazy" decoding="async" />
+    <figcaption>Soil test + engineer&#x27;s drawings before we quote.</figcaption>
+  </figure>
+
+
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-eyebrow">How it works</span>
+      <h2>From on-site quote to splash &mdash; 5 stages.</h2>
+
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Free on-site quote</h3><p>60-min visit. Measure, check access, soil, neighbour-fence height, canal-setback (if applicable), water table. Talk through concrete vs fibreglass. No obligation.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Design &amp; fixed quote</h3><p>Concept layout + finish schedule + fixed-price contract within 7 days. Multiple shell options for fibreglass; design variants for concrete.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>QBCC building approval</h3><p>We lodge the Form 17 with a private building certifier. 1&ndash;3 weeks. We coordinate canal-encroachment / setback variations if needed.</p></div>
+        <div class="step"><div class="step-num">4</div><h3>Build</h3><p>Fibreglass: 3&ndash;5 weeks excavation to handover. Concrete: 10&ndash;16 weeks (shell, steel, plumb, render, tile, fence). Resurfacing: 7&ndash;14 days. Daily on-site progress.</p></div>
+        <div class="step"><div class="step-num">5</div><h3>Form 23 + handover</h3><p>Pool Safety Inspector signs the Form 23. We commission equipment, run the water chemistry, hand over the maintenance pack and warranty (5 years structural, 1 year on equipment).</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Ready for a free on-site quote?</h2>
+        <p>60 minutes on-site. We measure, check access &amp; soil, talk you through concrete vs fibreglass honestly.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61485939966">&#9742; Call 0485 939 966</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Articles &amp; guides for the Gold Coast</h2>
+      <p>Practical reading from our jobs in the Gold Coast &mdash; what we charge, what to watch for, when a callout is worth it.</p>
+      <ul class="guides-list">
+          <li><a href="/pool-finance-gold-coast/">How to finance a pool on the Gold Coast</a></li>
+      </ul>
+    </div>
+  </section>
+
+</Layout>

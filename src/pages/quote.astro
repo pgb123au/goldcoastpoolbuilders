@@ -1,0 +1,153 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Free Pool Quote | Gold Coast Pool Builders | 0485 939 966"
+  description="Get a free on-site quote for a new Gold Coast swimming pool, resurfacing, equipment upgrade or renovation. 60-min visit, fixed-price quote within 7 days."
+  canonical="https://goldcoastpoolbuilders.com.au/quote/">
+
+  <section class="hero" style="padding: 2.5rem 0 3rem;">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Free On-Site Quote</span>
+      <h1>Book your free on-site pool quote.</h1>
+      <p class="hero-sub">
+        Tell us about your project &mdash; new pool, resurface, equipment upgrade,
+        or renovation. We&rsquo;ll come on-site for a 60-min visit, check
+        access, soil, equipment age, and barrier-compliance, talk through
+        material and finish options honestly. Fixed-price quote within 7 days.
+        Free, no obligation.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="form-wrap">
+        <div class="form-card">
+          <form name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks/">
+            <input type="hidden" name="form-name" value="quote" />
+            <p style="display:none;"><label>Don&rsquo;t fill this out: <input name="bot-field" /></label></p>
+
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="04xx xxx xxx" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="suburb">Suburb / postcode</label>
+            <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required placeholder="e.g. Mermaid Beach 4218, Robina 4226, Helensvale 4212" />
+
+            <label for="project-type">What project are you considering?</label>
+            <select id="project-type" name="project-type">
+              <option value="not-sure">Not sure &mdash; want a recommendation</option>
+              <option value="new-concrete">New concrete pool</option>
+              <option value="new-fibreglass">New fibreglass pool</option>
+              <option value="resurface">Pool resurfacing (existing pool)</option>
+              <option value="equipment-upgrade">Equipment upgrade (pump / chlorinator / heating)</option>
+              <option value="renovation">Pool renovation (coping / surround / fence / structural)</option>
+              <option value="form23-remediation">Pre-sale Form 23 compliance work</option>
+              <option value="combo">Combination of the above</option>
+            </select>
+
+            <label for="purpose">What is the pool for?</label>
+            <select id="purpose" name="purpose">
+              <option value="family">Family / kids</option>
+              <option value="entertaining">Entertaining / BBQs</option>
+              <option value="lap-swim">Serious lap swimming</option>
+              <option value="adult-relaxing">Adult-only relaxing zone</option>
+              <option value="spa-combo">Pool + spa combination</option>
+              <option value="property-value">Increase property value (pre-sale)</option>
+              <option value="canal-view">Canal / waterfront view feature</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="budget">Approximate budget</label>
+            <select id="budget" name="budget">
+              <option value="not-sure">Not sure</option>
+              <option value="under-15k">Under $15K (resurface or equipment only)</option>
+              <option value="15-40k">$15K&ndash;$40K (resurface + renovation)</option>
+              <option value="40-70k">$40K&ndash;$70K (fibreglass pool)</option>
+              <option value="70-120k">$70K&ndash;$120K (mid-range concrete pool)</option>
+              <option value="120-200k">$120K&ndash;$200K (premium concrete pool)</option>
+              <option value="200k-plus">$200K+ (canal-frontage / architectural)</option>
+            </select>
+
+            <label for="pool-age">If you have an existing pool, how old is it?</label>
+            <select id="pool-age" name="pool-age">
+              <option value="no-pool">No existing pool &mdash; new install</option>
+              <option value="under-5">Under 5 years</option>
+              <option value="5-15">5&ndash;15 years</option>
+              <option value="15-25">15&ndash;25 years (often resurface window)</option>
+              <option value="25-plus">25+ years (assess resurface vs rebuild)</option>
+              <option value="not-sure">Not sure</option>
+            </select>
+
+            <label for="canal">Is your block canal-frontage or lake-edge?</label>
+            <select id="canal" name="canal">
+              <option value="no">No &mdash; standard suburban block</option>
+              <option value="canal">Yes &mdash; Sanctuary Cove / Sovereign Islands / Hope Island / canal estate</option>
+              <option value="lake">Yes &mdash; Robina Quays / Robina Woods / lake estate</option>
+              <option value="hinterland">No &mdash; hinterland acreage (Mudgeeraba / Tallai)</option>
+              <option value="not-sure">Not sure</option>
+            </select>
+
+            <label for="timeframe">When do you want it built?</label>
+            <select id="timeframe" name="timeframe">
+              <option value="asap">ASAP &mdash; next 2 months</option>
+              <option value="3-6-months">3&ndash;6 months</option>
+              <option value="summer">Before next summer entertaining season</option>
+              <option value="12-plus">12 months or longer (research stage)</option>
+              <option value="not-sure">Not sure yet</option>
+            </select>
+
+            <label for="message">Any details? (optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Existing pool condition, known site constraints (access, water table, easements), specific design ideas, deadlines, etc."></textarea>
+
+            <button class="btn btn-primary btn-block" type="submit">Send my quote request</button>
+
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--c-muted);">We reply within 1 business day. Free, no obligation.</p>
+          </form>
+        </div>
+
+        <aside class="form-aside">
+          <h3>Prefer to talk?</h3>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9742;</span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+61485939966">0485 939 966</a>
+              <p style="font-size:0.85rem; color:var(--c-muted); margin:0;">Mon&ndash;Sat 7am&ndash;5pm AEST</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9978;</span>
+            <div>
+              <strong>Service area</strong>
+              <p style="margin:0;">Full City of Gold Coast LGA &mdash; Mermaid Beach, Burleigh Heads, Mudgeeraba, Robina, Helensvale, Surfers Paradise, Broadbeach, Palm Beach, Currumbin, canal estates, hinterland.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#10004;</span>
+            <div>
+              <strong>What you&rsquo;ll get</strong>
+              <ul style="margin:0.4rem 0 0; padding-left:1rem; font-size:0.95rem; color:var(--c-text);">
+                <li>Free on-site 60-min consultation</li>
+                <li>Access + soil + water-table check</li>
+                <li>Material / finish samples for new builds</li>
+                <li>Honest structural assessment for resurface jobs</li>
+                <li>Fixed-price written quote within 7 days</li>
+                <li>QBCC-licensed, SPASA QLD endorsed, 5-yr structural warranty</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>

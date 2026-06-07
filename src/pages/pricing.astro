@@ -1,0 +1,306 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Concrete or fibreglass — which?", "acceptedAnswer": {"@type": "Answer", "text": "Fibreglass: cheaper, faster (4–8 weeks), limited shape options, 25-year shell warranty. Concrete: more expensive, slower (10–16 weeks), any shape, 50+ year design life."}}, {"@type": "Question", "name": "How long does it take?", "acceptedAnswer": {"@type": "Answer", "text": "Fibreglass: 4–8 weeks site time. Concrete: 10–16 weeks. Plus 4–6 weeks pre-build permits."}}, {"@type": "Question", "name": "Payment schedule?", "acceptedAnswer": {"@type": "Answer", "text": "10% deposit, then stage payments: excavation, shell, plumbing/electrical, paving, fencing, completion. Final 10% on commissioning + sign-off."}}, {"@type": "Question", "name": "Are you HBCF / DBI insured?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — every build over $20k carries the required Domestic Building Insurance for your state. Verifiable on the regulator's register."}}, {"@type": "Question", "name": "Council permit — who handles?", "acceptedAnswer": {"@type": "Answer", "text": "We handle the application + neighbour notification. Approval timing 6–12 weeks depending on council."}}, {"@type": "Question", "name": "Crane access — what if my access is narrow?", "acceptedAnswer": {"@type": "Answer", "text": "Fibreglass: crane-in is standard ($1,400–$2,800). Some yards need a tower crane ($5,000+). Concrete: usually no crane needed."}}, {"@type": "Question", "name": "Warranty — what's covered?", "acceptedAnswer": {"@type": "Answer", "text": "Concrete shell: 25-year structural. Fibreglass shell: 25-year. Equipment: 5–10 year manufacturer. Workmanship: 7 years on AU pool builders' code."}}]};
+const serviceSchema = {"@context": "https://schema.org", "@type": "Service", "serviceType": "Pool building", "provider": {"@type": "GeneralContractor", "name": "Gold Coast Pool Builders", "telephone": "+61485939966", "url": "https://goldcoastpoolbuilders.com.au", "areaServed": {"@type": "City", "name": "the Gold Coast"}}, "areaServed": "the Gold Coast", "url": "https://goldcoastpoolbuilders.com.au/pricing/", "offers": {"@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "80", "highPrice": "180000", "offerCount": "20"}};
+const breadcrumbSchema = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://goldcoastpoolbuilders.com.au/"}, {"@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://goldcoastpoolbuilders.com.au/pricing/"}]};
+---
+<Layout
+  title="Pool builds prices on the Gold Coast 2026 | 0485 939 966"
+  description="New pool prices in the Gold Coast — concrete + fibreglass, fixed-price, HBCF-insured. 2026 rates by size. Call 0485 939 966."
+  canonical="https://goldcoastpoolbuilders.com.au/pricing/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Concrete and fibreglass — fixed-price contracts</span>
+      <h1>New pool build prices in the Gold Coast — 2026 cost guide</h1>
+      <p class="hero-sub">New pool builds in the Gold Coast sit between $45,000 (small fibreglass shell on a flat block with easy access) and $180,000+ (large concrete pool with feature wall, mosaic, spa, and full landscaping). Most family pools land $65,000–$110,000 fully landscaped and ready to swim.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61485939966" aria-label="Call 0485 939 966">&#9742; Call 0485 939 966</a>
+        <a class="btn btn-ghost" href="/quote/">Get a written quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <p class="lead">Below are realistic 2026 ranges by pool type and size. Every quote is fixed-price under your state's Domestic Building Contract regime. Call 0485 939 966 for a site-specific quote.</p>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Typical 2026 prices for pool building in the Gold Coast</h2>
+      <p>Real ranges from our books, not made-up averages. Every quote we issue is itemised against the work below.</p>
+        <table class="pricing-table">
+          <thead><tr><th>Service</th><th>Typical range (AU 2026)</th><th>What's included</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Service"><strong>Soil test + pre-build site assessment</strong></td>
+              <td data-label="Price"><span class="price-range">$680 – $1,200</span></td>
+              <td data-label="Note">Critical pre-quote step. Determines reactivity + bearing capacity.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Fibreglass pool — small (6m x 3m)</strong></td>
+              <td data-label="Price"><span class="price-range">$28,000 – $42,000</span></td>
+              <td data-label="Note">Shell + install + filtration. Pre-built shell.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Fibreglass pool — mid (8m x 4m)</strong></td>
+              <td data-label="Price"><span class="price-range">$42,000 – $58,000</span></td>
+              <td data-label="Note">Shell + install + filtration. Most popular size.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Fibreglass pool — large (10m+ x 4m)</strong></td>
+              <td data-label="Price"><span class="price-range">$58,000 – $85,000</span></td>
+              <td data-label="Note">Larger shell.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Concrete pool — small (6m x 3m)</strong></td>
+              <td data-label="Price"><span class="price-range">$45,000 – $65,000</span></td>
+              <td data-label="Note">Custom shape, sprayed concrete + waterproof + finish.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Concrete pool — mid (8m x 4m)</strong></td>
+              <td data-label="Price"><span class="price-range">$65,000 – $95,000</span></td>
+              <td data-label="Note">Includes basic landscaping.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Concrete pool — large (10m+ x 4m)</strong></td>
+              <td data-label="Price"><span class="price-range">$95,000 – $150,000+</span></td>
+              <td data-label="Note">Premium feature, often includes spa.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Pool surround paving (per sqm)</strong></td>
+              <td data-label="Price"><span class="price-range">$120 – $380</span></td>
+              <td data-label="Note">Concrete, paver, or natural stone.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Pool fencing (per linear m)</strong></td>
+              <td data-label="Price"><span class="price-range">$180 – $580</span></td>
+              <td data-label="Note">Per state — see [Pool Fencing] guide.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Pool heating (heat-pump install)</strong></td>
+              <td data-label="Price"><span class="price-range">$3,500 – $6,500</span></td>
+              <td data-label="Note">Extends swim season by 4-6 months.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Pool heating (solar evac-tube)</strong></td>
+              <td data-label="Price"><span class="price-range">$4,500 – $8,500</span></td>
+              <td data-label="Note">Roof-mounted, free running cost.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Spa add-on (in-ground, integrated)</strong></td>
+              <td data-label="Price"><span class="price-range">$8,500 – $18,500</span></td>
+              <td data-label="Note">Same-shell or separate-shell spa.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Pool cover (manual)</strong></td>
+              <td data-label="Price"><span class="price-range">$1,400 – $2,800</span></td>
+              <td data-label="Note">Solar / winter / safety cover.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Pool cover (auto-reel, in-deck)</strong></td>
+              <td data-label="Price"><span class="price-range">$8,500 – $18,500</span></td>
+              <td data-label="Note">Premium. Cuts evap + heating cost 50%.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Interior finish — pebble</strong></td>
+              <td data-label="Price"><span class="price-range">$95 – $140 per sqm</span></td>
+              <td data-label="Note">Standard premium finish.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Interior finish — quartz</strong></td>
+              <td data-label="Price"><span class="price-range">$120 – $180 per sqm</span></td>
+              <td data-label="Note">Smoother under foot.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Interior finish — tile mosaic</strong></td>
+              <td data-label="Price"><span class="price-range">$180 – $320 per sqm</span></td>
+              <td data-label="Note">Premium look.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Council application + permit</strong></td>
+              <td data-label="Price"><span class="price-range">$1,400 – $3,500</span></td>
+              <td data-label="Note">Planning + building permit + neighbour notification.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Excavation surcharge (rock)</strong></td>
+              <td data-label="Price"><span class="price-range">+$2,800 – $8,500</span></td>
+              <td data-label="Note">On rock-substrate sites.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Crane access fee</strong></td>
+              <td data-label="Price"><span class="price-range">$1,400 – $2,800</span></td>
+              <td data-label="Note">When fibreglass shell can't drop in by truck.</td>
+            </tr>
+          </tbody>
+        </table>
+      <p class="table-foot"><em>Prices indicative for the Gold Coast in 2026. Final quote depends on your site — call 0485 939 966 for an exact number.</em></p>
+    </div>
+  </section>
+
+  <section class="cta-card-section">
+    <div class="cta-card">
+      <div class="cta-card-body">
+        <h3>Need an exact price for your job?</h3>
+        <p>Most quotes ready within 24 hours of the site visit. No-obligation, free, written.</p>
+      </div>
+      <div class="cta-card-actions">
+        <a class="btn btn-primary" href="tel:+61485939966">&#9742; Call 0485 939 966</a>
+        <a class="btn btn-ghost" href="/quote/">Online quote form</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What changes the price on your job</h2>
+      <p>The ranges above are the starting point. These five factors are what move a quote up or down within (or sometimes outside) those bands.</p>
+        <ol class="numbered-list">
+          <li>Soil type — reactive clay needs engineered footings; rock needs blast-drill excavation.</li>
+          <li>Site access — narrow side-passage or rear-of-block adds $5,000–$15,000 in crane / staging.</li>
+          <li>Pool shape — rectangle cheapest concrete; freeform / curved adds 20–30%.</li>
+          <li>Heating + cover — adds $8,000–$20,000 but extends swim season + cuts running cost 50%.</li>
+          <li>Landscaping — pool surrounds + fencing can be 40-60% of total project cost.</li>
+        </ol>
+    </div>
+  </section>
+
+  <section class="section section-warn">
+    <div class="section-inner">
+      <h2>Red flags &mdash; what to watch for in quotes</h2>
+      <p>We see these patterns every week from operators we'd never recommend. If a quote you've received contains one of these, ask before signing.</p>
+        <ul class="bullet-list">
+          <li>Quotes without soil-test cost included — $1,000 ambush after deposit.</li>
+          <li>Cheap-end concrete pools with thin shotcrete spec — crack within 5 years.</li>
+          <li>Fibreglass shells without 25-year structural warranty — usually thin gel-coat.</li>
+          <li>Quotes that don't include council permit cost — $1,400–$3,500 on top.</li>
+          <li>Builders without HBCF / DBI insurance — illegal in most states over $20k contract value.</li>
+        </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>How to get an accurate quote in 5 minutes</h2>
+      <p>Have the following ready when you call 0485 939 966 (or jot it on the quote form) and we can give you a real number in one call, not five.</p>
+        <ol class="numbered-list">
+          <li>Block size + rough sketch of where you want the pool.</li>
+          <li>Side-passage / access width (truck crane access?).</li>
+          <li>Soil type if known (clay, sand, rock).</li>
+          <li>Budget band ($45k / $75k / $120k+).</li>
+          <li>Council jurisdiction (for permit path).</li>
+        </ol>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Concrete or fibreglass — which?</strong></summary>
+          <div class="faq-a">Fibreglass: cheaper, faster (4–8 weeks), limited shape options, 25-year shell warranty. Concrete: more expensive, slower (10–16 weeks), any shape, 50+ year design life.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>How long does it take?</strong></summary>
+          <div class="faq-a">Fibreglass: 4–8 weeks site time. Concrete: 10–16 weeks. Plus 4–6 weeks pre-build permits.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Payment schedule?</strong></summary>
+          <div class="faq-a">10% deposit, then stage payments: excavation, shell, plumbing/electrical, paving, fencing, completion. Final 10% on commissioning + sign-off.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Are you HBCF / DBI insured?</strong></summary>
+          <div class="faq-a">Yes — every build over $20k carries the required Domestic Building Insurance for your state. Verifiable on the regulator's register.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Council permit — who handles?</strong></summary>
+          <div class="faq-a">We handle the application + neighbour notification. Approval timing 6–12 weeks depending on council.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Crane access — what if my access is narrow?</strong></summary>
+          <div class="faq-a">Fibreglass: crane-in is standard ($1,400–$2,800). Some yards need a tower crane ($5,000+). Concrete: usually no crane needed.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Warranty — what's covered?</strong></summary>
+          <div class="faq-a">Concrete shell: 25-year structural. Fibreglass shell: 25-year. Equipment: 5–10 year manufacturer. Workmanship: 7 years on AU pool builders' code.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-card-section">
+    <div class="cta-card cta-card-primary">
+      <div class="cta-card-body">
+        <h3>Ready for an exact quote on your Gold Coast job?</h3>
+        <p>Free written quotes. No obligation. Same-day callbacks on most enquiries.</p>
+      </div>
+      <div class="cta-card-actions">
+        <a class="btn btn-primary btn-large" href="tel:+61485939966" aria-label="Call 0485 939 966">&#9742; Call 0485 939 966</a>
+        <a class="btn btn-ghost btn-large" href="/quote/">Get a quote online</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+
+    .lead { font-size: 1.125rem; line-height: 1.7; max-width: 70rem; margin: 0 auto; color: var(--text, #1f2937); }
+    .section-tint { background: rgba(0, 0, 0, 0.025); }
+    .section-warn { background: rgba(180, 100, 0, 0.04); }
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .pricing-table thead { background: #1f2937; color: #fff; }
+    .pricing-table th { padding: 0.85rem 1rem; text-align: left; font-weight: 600; font-size: 0.95rem; }
+    .pricing-table td { padding: 0.85rem 1rem; border-top: 1px solid #e5e7eb; vertical-align: top; }
+    .pricing-table tr:nth-child(even) td { background: rgba(0,0,0,0.015); }
+    .pricing-table .price-range { font-weight: 600; color: #047857; white-space: nowrap; }
+    .table-foot { font-size: 0.9rem; color: #6b7280; margin-top: 0.5rem; }
+    @media (max-width: 640px) {
+      .pricing-table thead { display: none; }
+      .pricing-table, .pricing-table tbody, .pricing-table tr, .pricing-table td { display: block; width: 100%; }
+      .pricing-table tr { border-bottom: 2px solid #e5e7eb; padding: 0.75rem 0; }
+      .pricing-table td { border: none; padding: 0.35rem 0.5rem; }
+      .pricing-table td:before { content: attr(data-label) ": "; font-weight: 600; color: #6b7280; display: inline-block; min-width: 5rem; }
+      .pricing-table td:first-child:before { display: none; }
+    }
+    .numbered-list, .bullet-list { max-width: 65rem; margin: 1rem 0; padding-left: 1.5rem; line-height: 1.7; }
+    .numbered-list li, .bullet-list li { margin: 0.65rem 0; }
+    .cta-card-section { padding: 2rem 1rem; }
+    .cta-card {
+      max-width: 56rem; margin: 0 auto;
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 10px;
+      padding: 1.75rem; display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .cta-card-primary { background: #1f2937; color: #fff; border-color: #1f2937; }
+    .cta-card-primary h3 { color: #fff; }
+    .cta-card-body { flex: 1 1 24rem; }
+    .cta-card-body h3 { margin: 0 0 0.4rem 0; font-size: 1.35rem; line-height: 1.3; }
+    .cta-card-body p { margin: 0; }
+    .cta-card-actions { display: flex; gap: 0.65rem; flex-wrap: wrap; }
+    .btn-large { padding: 0.85rem 1.5rem; font-size: 1.05rem; }
+    .faq-list { max-width: 60rem; margin: 1rem auto; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0; }
+    .faq-item[open] { background: rgba(0,0,0,0.02); }
+    .faq-q { cursor: pointer; padding: 0.4rem 0.5rem; font-size: 1.05rem; }
+    .faq-q:hover { color: #047857; }
+    .faq-a { padding: 0.65rem 0.5rem 0.85rem 0.5rem; line-height: 1.7; color: #4b5563; }
+
+  </style>
+</Layout>
